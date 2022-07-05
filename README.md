@@ -8,6 +8,13 @@ Via script: `bash install.sh`
 
 This will generate the binary and set up the database. If you want, you can copy the binary and the public folder into a folder of your choice.
 
+### Docker
+
+1. Clone repo
+2. `docker build -t tasks .`
+3. `docker run --name tasks -d -p 8081:80801 tasks`
+4. Open on localhost:8081 OR *YOUR_IP_HERE:8081*
+
 Manually:
 
 1. `go get github.com/thewhitetulip/Tasks`
